@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner;
+/**
+ *
+ * @author julio
+ */
+public class JavaApplication1 {
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner objetoSexual = new Scanner(System.in);
+        System.out.println("primeiro número");
+     int a = objetoSexual.nextInt();
+       System.out.println("sec numero");
+      int b = objetoSexual.nextInt();
+      objetoSexual.nextLine();
+       System.out.println("opelacao");
+       String yeah = objetoSexual.nextLine();
+       if (yeah.equalsIgnoreCase("mais")){
+           System.out.println(a + b);
+        }
+       else if(yeah.equals("menos")){
+           System.out.println(a - b);
+       }
+       else if(yeah.equals("vezes")){
+           System.out.println(a * b);
+       }
+        else if(yeah.equals("divisao")){
+           System.out.println(a / b);
+       }
+      
+        
+    }
+    
+}
