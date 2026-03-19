@@ -14,14 +14,14 @@ public class JavaApplication1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner objetoSexual = new Scanner(System.in);
+        Scanner objeto = new Scanner(System.in);
         System.out.println("primeiro número");
-     int a = objetoSexual.nextInt();
+     int a = objeto.nextInt();
        System.out.println("sec numero");
-      int b = objetoSexual.nextInt();
-      objetoSexual.nextLine();
+      int b = objeto.nextInt();
+      objeto.nextLine();
        System.out.println("opelacao");
-       String yeah = objetoSexual.nextLine();
+       String yeah = objeto.nextLine();
        if (yeah.equalsIgnoreCase("mais")){
            System.out.println(a + b);
         }
