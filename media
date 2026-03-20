@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner;
+/**
+ *
+ * @author julio
+ */
+public class JavaApplication1 {
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner chariot = new Scanner(System.in);
+       double n1, n2, media;
+
+        System.out.print("Digite a primeira nota: ");
+        n1 = chariot.nextDouble();
+
+        System.out.print("Digite a segunda nota: ");
+        n2 = chariot.nextDouble();
+
+        media = (n1 + n2) / 2;
+
+        System.out.println("A média é: " + media);      
+        
+    }
+    
+}
+    

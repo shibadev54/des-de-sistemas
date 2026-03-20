@@ -1,0 +1,83 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner;
+/**
+ *
+ * @author julio
+ */
+public class JavaApplication1 {
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner objetoSexual= new Scanner(System.in);
+       
+        String[] historico = new String[10];
+        int posicao = 0;
+
+        while(true){
+
+        System.out.println("primeiro número");
+        int a = objetoSexual.nextInt();
+
+        System.out.println("sec numero");
+        int b = objetoSexual.nextInt();
+        objetoSexual.nextLine();
+
+        System.out.println("opelacao");
+        String yeah = objetoSexual.nextLine();
+
+        String registro = "";
+
+        if (yeah.equalsIgnoreCase("mais")){
+            int r = a + b;
+            System.out.println(r);
+            registro = a + " + " + b + " = " + r;
+        }
+
+        else if(yeah.equals("menos")){
+            int r = a - b;
+            System.out.println(r);
+            registro = a + " - " + b + " = " + r;
+        }
+
+        else if(yeah.equals("vezes")){
+            int r = a * b;
+            System.out.println(r);
+            registro = a + " * " + b + " = " + r;
+        }
+
+        else if(yeah.equals("divisao")){
+            int r = a / b;
+            System.out.println(r);
+            registro = a + " / " + b + " = " + r;
+        }
+
+        else if(yeah.equals("historico")){
+            System.out.println("=== HISTORICO ===");
+            for(int i = 0; i < historico.length; i++){
+                if(historico[i] != null){
+                    System.out.println(historico[i]);
+                }
+            }
+        
+        }
+
+        if(!registro.equals("")){
+            historico[posicao] = registro;
+            posicao = (posicao + 1) % 10;
+        }
+
+        }
+
+        
+    }
+    
+}
+    
+         
+

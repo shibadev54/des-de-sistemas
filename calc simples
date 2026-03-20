@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner;
+/**
+ *
+ * @author julio
+ */
+public class JavaApplication1 {
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner chariot = new Scanner(System.in);
+        System.out.println("2 valores, por favor");
+        float a = chariot.nextFloat();
+        float b = chariot.nextFloat();
+        System.out.println("soma " + (a+b));
+      System.out.println("subtração " + (a-b));
+      System.out.println("multiplicação " + (a*b));
+      System.out.println("divisão " + (a/b));
+      
+        
+    }
+    
+}
+    
