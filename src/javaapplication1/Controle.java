@@ -1,6 +1,7 @@
-package ArrayEPoo;
+package javaapplication1;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Controle {
     private String nome;
