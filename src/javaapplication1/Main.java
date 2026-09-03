@@ -5,6 +5,7 @@ public class Main {
 Controle c = new Controle();
 c.Adicionar();
 c.Percorrer();
+c.Media();
     }
 
 }
