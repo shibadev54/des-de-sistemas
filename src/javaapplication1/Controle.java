@@ -1,41 +1,36 @@
-package javaapplication1;
-import java.util.ArrayList;
-import java.util.Scanner;
-
-
-public class Controle {
+ package javaapplication1;;
+public class Aluno {
     private String nome;
     private int nota1;
     private int nota2;
-   private Scanner read = new Scanner(System.in);
-public void Adicionar(){
-    do{
-        ArrayList<Aluno> Alunos = new ArrayList<Aluno>();
-        System.out.println("insira seu nome");
-        nome = read.nextLine();
-        this.nome=nome;
-        if(nome.equals("fim")){
-        break;}
-        System.out.println("insira sua nota");
-        nota1 = read.nextInt();
-        this.nota1=nota1;
-        if(nota1 < 0 || nota1 > 100){
-        break;
-        }
-        System.out.println("insira sua outra nota");
-        nota2 = read.nextInt();
-        this.nota2 = nota2;
-       if(nota2 < 0 || nota2 > 100){
-        break;
-        }
-Alunos.add(new Aluno(nome, nota1, nota2));
-}while(true);
 
+    public Aluno(String nome, int nota1, int nota2) {
+        this.nome = nome;
+        this.nota1 = nota1;
+        this.nota2 = nota2;
+    }
+
+    public String getNome() {
+        return nome;
 }
-public int Percorrer(Alunos){
-    System.out.println("esses são os alunos");
-for(Aluno A:Alunos){
-        return this.Aluno;
-}
-}
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getNota1() {
+        return nota1;
+    }
+
+    public void setNota1(int nota1) {
+        this.nota1 = nota1;
+    }
+
+    public int getNota2() {
+        return nota2;
+    }
+
+    public void setNota2(int nota2) {
+        this.nota2 = nota2;
+    }
 }
