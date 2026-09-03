@@ -15,12 +15,12 @@ public void Adicionar(){
         if(nome.equals("fim")){
         break;}
         System.out.println("insira sua nota");
-        nota1 = read.nextInt();
+        nota1 = Integer.parseInt(read.nextInt());
         if(nota1 < 0 || nota1 > 100){
         break;
         }
         System.out.println("insira sua outra nota");
-        nota2 = read.nextInt();
+        nota2 = Integer.parseInt(read.nextInt());
 
        if(nota2 < 0 || nota2 > 100){
         break;
